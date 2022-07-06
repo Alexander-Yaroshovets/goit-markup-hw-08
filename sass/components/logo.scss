@@ -1,0 +1,8 @@
+.logo {
+  color: var(--acent-color);
+  font-family: Raleway, sans-serif;
+  @include font-text(700, 24px, 1.17);
+  @media screen  and (min-width: 1200px) {
+    @include font-text(700, 26px, 1.19);
+  }
+}

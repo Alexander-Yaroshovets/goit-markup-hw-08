@@ -1,0 +1,192 @@
+.footer {
+  background-color: var(--basement-colour);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and(min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .logo {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+}
+.footer-container {
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.logo-span-footer {
+  color: var(--white-color);
+}
+.footer-container-list {
+ margin: auto;
+ width: 230px;
+  @media screen and(max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: 0;
+    margin-left: 51px;
+  }
+  @media screen and (min-width:1200px) {
+    margin: 0;
+  }
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 8px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
+}
+
+.address-place {
+  font-style: normal;
+  @include font-text(400, 14px, 1.71);
+  color: var(--white-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-link {
+  /* display: inline-block;
+  margin-bottom: 9px; */
+  font-style: normal;
+  @include font-text(400, 14px, 1.71);
+  color: rgba(255, 255, 255, 0.6);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-place:hover,
+.address-place:focus,
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--acent-color);
+}
+.footer-text {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  @include font-text(700, 14px, 1.14);
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.footer-social-links {
+  .social-list {
+    @extend %align-list;
+  } 
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    margin-left: 165px;
+  }
+  @media screen and (min-width:1200px) {
+    margin-left: 70px;
+  }
+}
+
+.footer-svg {
+  display: flex;
+  width: inherit;
+  height: inherit;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  fill: var(--white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--acent-color);
+    border-radius: 50%;
+  }
+}
+
+.footer-social-link {
+  width: 20px;
+  height: 20px;
+  fill: var(--white-color);
+}
+.footer-input {
+  background-color: inherit;
+  // min-width: 358px;
+  min-width: 100%;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: var(--white-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+  transition-property: border-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .footer-label:focus-within & {
+    border-color: var(--acent-color);
+  }
+  &::placeholder {
+    @include font-text(400, 16px, 1.25);
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+.footer-form {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.footer-label {
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
+}
+.footer-subscription {
+  @media screen and (min-width: 768px) {
+    margin-left: 151px;
+    min-width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 570px;
+    margin-left: auto;
+  }
+}
+
+.footer-subscription .button {
+  margin: auto;
+  margin-top: 20px;
+  @extend %align-list;
+  min-width: 200px;
+  font-family: inherit;
+  @media screen and(min-width: 1200px) {
+    margin: 0;
+    margin-left: 12px;
+  }
+  @include font-text(700, 16px, 1.88, 0.06em);
+  padding: 10px 28px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.submit-button-svg {
+  margin-left: 10px;
+  fill: var(--main-button-color);
+}
