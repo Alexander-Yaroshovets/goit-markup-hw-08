@@ -133,6 +133,14 @@
     margin-bottom: 10px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__post {
+    padding-top: 20px;
+  }
+  .contacts__phone {
+    padding-bottom: 20px;
+  }
+}
 
 @keyframes scaler {
   0% {
@@ -145,4 +153,3 @@
     transform: scale(1);
   }
 }
-

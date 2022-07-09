@@ -75,6 +75,9 @@
   @include font-text(700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
   color: var(--main-title-color);
+  @media screen and (min-width:768px) {
+    text-align: left;
+  }
 }
 .advantages-text {
   margin-top: 0px;

@@ -125,7 +125,10 @@
 }
 
 .check-span {
-  display: flex;
+  display: inline-flex;
+  @media screen and (max-width:480px) {
+    display: inline-block;
+  }
   justify-content: center;
   align-items: center;
   font-weight: 400;

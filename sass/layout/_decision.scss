@@ -1,19 +1,20 @@
-.decision .container {
+.decision {
+  background-color: var(--basement-colour);
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/Header-phoneimg.jpg);
-
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
-  padding-left: 60px;
-  padding-right: 60px;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   align-items: center;
   padding-top: 118px;
   padding-bottom: 118px;
+  height: 400px;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -24,11 +25,8 @@
       url(../images/Header-phoneimg@2x.jpg);
   }
 
-  @media screen and (min-width: 768px) {
-    background-size: contain;
-    padding-left: 204px;
-    padding-right: 204px;
-    background-color: var(--basement-colour);
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    width: 100%;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -42,13 +40,15 @@
           rgba(47, 48, 58, 0.4)
         ),
         url(../images/Header-tabletimg@2x.jpg);
-    }
+    
+    } 
   }
- @media screen and (min-width: 1200px) {
-    background-size: contain;
+  @media screen and (min-width: 769px) {
     width: 100%;
-    padding-left: 204px;
-    padding-right: 204px;
+    height: 600px;
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: var(--basement-colour);
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -84,7 +84,7 @@
   @include font-text(900, 26px, 1.61, 0.06em);
   text-transform: uppercase;
   color: var(--white-color);
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 769px) {
     max-width: 696px;
     @include font-text(900, 44px, 1.36, 0.06em);
   }

@@ -1,7 +1,6 @@
 .portfolio {
   background-color: var(--white-color);
-  @media screen and (min-width: 1200px)
-  {
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -27,19 +26,27 @@
   // &__item:not(:last-child) {
   //   margin-right: 8px;
   // }
-  & .active {
+  & .active,
+  :focus {
     color: var(--main-button-color);
     background-color: var(--second-button-color);
   }
 }
 
 /* ----------------portfolio---------------- */
+
+.portfolio-list__item {
+  display: flex;
+}
 .product-link {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &__title {
+    width: 100%;
     margin-top: 0px;
     margin-bottom: 4px;
     @include font-text(700, 18px, 2, 0.06em);
@@ -54,14 +61,17 @@
   &__image {
     display: block;
     width: 100%;
-    // max-width: 100%;
-    height: auto;
+    flex-basis: auto;
   }
   &__overlay {
     position: relative;
     overflow: hidden;
+    overflow-y: auto;
   }
   &__meta {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
     padding: 20px 24px;
     border-left: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;

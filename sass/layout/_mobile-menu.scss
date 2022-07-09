@@ -6,8 +6,14 @@
   background-color: var(--white-color);
   top: 0;
   left: 0;
-  padding-top: 48px;
   padding-bottom: 48px;
+  transition: opacity 500ms, visibility 500ms;
+  @media screen and(min-width:767px) {
+    display: none;
+  }
+  .is-hidden.mobile-menu {
+  transition: transform 500ms, opacity 500ms, visibility 500ms;
+}
 
   .container {
     padding-left: 40px;
@@ -16,27 +22,34 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    width:100%;
     overflow-y: auto;
   }
 }
+
+
 .mobile-open-btn {
   display: block;
   margin-left: auto;
   padding: 0;
   border: none;
   background-color: var(--white-color);
-  @media screen and (min-width: 768px) {
+
+  @media screen and (min-width: 767px) {
     display: none;
   }
 }
 .mobile-open-svg,
 .mobile-close-svg {
   background-color: var(--white-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mobile-open-svg:hover,
-.mobile-open-svg:focus,
-.mobile-close-svg:hover,
-.mobile-close-svg:focus {
+.mobile-open-btn:hover .mobile-open-svg,
+.mobile-open-btn:focus .mobile-open-svg,
+.mobile-close-btn:hover .mobile-close-svg,
+.mobile-close-btn:focus .mobile-close-svg {
   fill: var(--acent-color);
 }
 
@@ -59,6 +72,13 @@
   line-height: calc(47 / 40);
   letter-spacing: 0.02em;
   color: var(--main-title-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--acent-color);
+  }
   &--current {
     color: var(--acent-color);
   }
@@ -70,6 +90,7 @@
 .mobile-contacts__item:not(:last-child) {
   margin-bottom: 32px;
 }
+
 .mobile-contacts__mail {
   font-weight: 500;
   font-size: 24px;
@@ -82,6 +103,17 @@
   font-size: 34px;
   line-height: calc(40 / 34);
   letter-spacing: 0.02em;
+  color: var(--main-title-color);
+}
+.mobile-contacts__link {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-contacts__link:hover .mobile-contacts__phone,
+.mobile-contacts__link:focus .mobile-contacts__phone,
+.mobile-contacts__link:hover .mobile-contacts__mail,
+.mobile-contacts__link:focus .mobile-contacts__mail{
   color: var(--acent-color);
 }
 .mobile-menu-bottom {
