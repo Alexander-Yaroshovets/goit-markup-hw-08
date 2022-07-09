@@ -64,7 +64,10 @@
   &__overlay {
     position: relative;
     overflow: hidden;
-    overflow-y: auto;
+    @media screen and (max-width:1200px) {
+      overflow-y: auto;
+    }
+    
   }
   &__meta {
     display: flex;

@@ -1445,7 +1445,11 @@ img {
 .product-link__overlay {
   position: relative;
   overflow: hidden;
-  overflow-y: auto;
+}
+@media screen and (max-width: 1200px) {
+  .product-link__overlay {
+    overflow-y: auto;
+  }
 }
 .product-link__meta {
   display: flex;
