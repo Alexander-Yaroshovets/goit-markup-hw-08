@@ -1139,12 +1139,6 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 1200px) {
-  .footer {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
 .footer .logo {
   display: inline-block;
   margin-bottom: 20px;
@@ -1183,6 +1177,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-container-first {
     display: flex;
+    align-items: baseline;
   }
 }
 
@@ -1264,6 +1259,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-social-links {
     margin-left: 70px;
+    text-align: left;
   }
 }
 
@@ -1342,6 +1338,7 @@ img {
   .footer-subscription {
     min-width: 570px;
     margin-left: auto;
+    text-align: left;
   }
 }
 

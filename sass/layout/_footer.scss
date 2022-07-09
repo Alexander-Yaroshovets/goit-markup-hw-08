@@ -2,17 +2,14 @@
   background-color: var(--basement-colour);
   padding-top: 60px;
   padding-bottom: 60px;
-  @media screen and(min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
+ 
   .logo {
     display: inline-block;
     margin-bottom: 20px;
   }
 }
 .footer-container {
-text-align: center;
+ text-align: center;
   @media screen and (min-width: 768px) and (max-width: 1200px) {
     padding: 0;
     width: 768px;
@@ -39,6 +36,7 @@ text-align: center;
 .footer-container-first{
     @media screen and (min-width: 1200px) {
       display: flex;
+      align-items: baseline;
     }
 } 
 
@@ -103,6 +101,7 @@ text-align: center;
   }
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
+    text-align: left;
   }
 }
 
@@ -173,6 +172,7 @@ text-align: center;
   @media screen and (min-width: 1200px) {
     min-width: 570px;
     margin-left: auto;
+    text-align: left;
   }
 }
 
