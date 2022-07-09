@@ -47,10 +47,7 @@ text-align: center;
   @media screen and(max-width: 767px) {
     margin-bottom: 60px;
   }
-  // @media screen and (min-width: 768px) and (max-width: 1199px) {
-  //   margin: 0;
-  //   margin-left: 51px;
-  // }
+ 
   @media screen and (min-width: 1200px) {
     margin: 0;
     text-align: left;
@@ -73,8 +70,6 @@ text-align: center;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-link {
-  /* display: inline-block;
-  margin-bottom: 9px; */
   font-style: normal;
   @include font-text(400, 14px, 1.71);
   color: rgba(255, 255, 255, 0.6);
@@ -137,7 +132,6 @@ text-align: center;
 }
 .footer-input {
   background-color: inherit;
-  // min-width: 358px;
   min-width: 100%;
   padding-left: 16px;
   padding-top: 15px;
