@@ -119,20 +119,14 @@
   position: relative;
 }
 .label-check {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
+  text-align: left;
 }
 
 .check-span {
-  display: inline-flex;
-  @media screen and (max-width:480px) {
-    display: inline-block;
-  }
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
   font-weight: 400;
-  margin-right: 4px;
+  margin-right: 3px;
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.71;
@@ -144,9 +138,9 @@
 }
 
 .check-link {
-  display: inline-flex;
-  justify-content: center;
-  text-align: center;
+  display: inline-block;
+  // justify-content: center;
+  // text-align: center;
   font-weight: 400;
   @media screen and (min-width: 1200px) {
     font-size: 14px;
@@ -200,7 +194,7 @@
 .check-svg {
   border: 1px solid var(--main-title-color);
   border-radius: 2px;
-  margin-right: 8px;
+  margin-right: 4px;
   fill: transparent;
   transition-property: border-color, fill, background-color;
   transition-duration: 250ms;
